@@ -410,6 +410,7 @@ pub mod common {
 
 	use bigint::prelude::U256;
 
+	//@note:@here:mod this to push a block reward to the Shyft Network as well as the miner
 	/// Give reward and trace.
 	pub fn bestow_block_reward(block: &mut ExecutedBlock, reward: U256) -> Result<(), Error> {
 		let fields = block.fields_mut();
