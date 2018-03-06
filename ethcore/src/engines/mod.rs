@@ -410,10 +410,14 @@ pub mod common {
 
 	use bigint::prelude::U256;
 
+	const MINER_REWARD_PERCENT: i32 = 50;
+
 	//@note:@here:mod this to push a block reward to the Shyft Network as well as the miner
 	/// Give reward and trace.
 	pub fn bestow_block_reward(block: &mut ExecutedBlock, reward: U256) -> Result<(), Error> {
 		let fields = block.fields_mut();
+		let miner_reward = ((MINER_REWARD_PERCENT/100) * reward);
+		let network_reward = reward - miner_reward;
 		// Bestow block reward
 		let res = fields.state.add_balance(fields.header.author(), &reward, CleanupMode::NoEmpty)
 			.map_err(::error::Error::from)
