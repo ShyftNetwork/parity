@@ -409,19 +409,26 @@ pub mod common {
 	use state::CleanupMode;
 
 	use bigint::prelude::U256;
+	use bigint::hash::H160;
 
+	// Percentage of the reward to goto the miner (50 => 50%)
 	const MINER_REWARD_PERCENT: i32 = 50;
 
 	//@note:@here:mod this to push a block reward to the Shyft Network as well as the miner
 	/// Give reward and trace.
 	pub fn bestow_block_reward(block: &mut ExecutedBlock, reward: U256) -> Result<(), Error> {
+		//TODO: Insert address & move outside block as const
+		let SHYFT_ADDRESS: H160 = H160::zero();
 		let fields = block.fields_mut();
-		let miner_reward = ((MINER_REWARD_PERCENT/100) * reward);
-		let network_reward = reward - miner_reward;
+		//TODO: Peference in rounding?
+		let (miner_reward, _) = reward.overflowing_mul(U256::from((MINER_REWARD_PERCENT)/100));
+		let shyft_reward = reward - miner_reward;
 		// Bestow block reward
-		let res = fields.state.add_balance(fields.header.author(), &reward, CleanupMode::NoEmpty)
+		let res = fields.state.add_balance(fields.header.author(), &miner_reward, CleanupMode::NoEmpty)
 			.map_err(::error::Error::from)
-			.and_then(|_| fields.state.commit());
+			.and_then(|_ | fields.state.add_balance(&SHYFT_ADDRESS, &shyft_reward, CleanupMode::NoEmpty)
+						  .map_err(::error::Error::from)
+						  .and_then(|_| fields.state.commit()));
 
 		let block_author = fields.header.author().clone();
 		fields.traces.as_mut().map(move |mut traces| {
