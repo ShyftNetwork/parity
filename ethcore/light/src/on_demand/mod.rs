@@ -18,6 +18,7 @@
 //! The request service is implemented using Futures. Higher level request handlers
 //! will take the raw data received here and extract meaningful results from it.
 
+use std::cmp;
 use std::collections::HashMap;
 use std::marker::PhantomData;
 use std::sync::Arc;
@@ -28,6 +29,7 @@ use futures::{Async, Poll, Future};
 use futures::sync::oneshot::{self, Sender, Receiver, Canceled};
 use network::PeerId;
 use parking_lot::{RwLock, Mutex};
+use rand;
 
 use net::{
 	self, Handler, PeerStatus, Status, Capabilities,
@@ -90,7 +92,14 @@ impl Pending {
 			match self.requests[idx].respond_local(cache) {
 				Some(response) => {
 					self.requests.supply_response_unchecked(&response);
+
+					// update header and back-references after each from-cache
+					// response to ensure that the requests are left in a consistent
+					// state and increase the likelihood of being able to answer
+					// the next request from cache.
 					self.update_header_refs(idx, &response);
+					self.fill_unanswered();
+
 					self.responses.push(response);
 				}
 				None => break,
@@ -382,7 +391,10 @@ impl OnDemand {
 				true => None,
 			})
 			.filter_map(|pending| {
-				for (peer_id, peer) in peers.iter() { // .shuffle?
+				// the peer we dispatch to is chosen randomly
+				let num_peers = peers.len();
+				let rng = rand::random::<usize>() % cmp::max(num_peers, 1);
+				for (peer_id, peer) in peers.iter().chain(peers.iter()).skip(rng).take(num_peers) {
 					// TODO: see which requests can be answered by the cache?
 
 					if !peer.can_fulfill(&pending.required_capabilities) {

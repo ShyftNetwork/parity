@@ -50,9 +50,9 @@ use encoded;
 use engines::{EthEngine, EpochTransition};
 use error::{ImportError, ExecutionError, CallError, BlockError, ImportResult, Error as EthcoreError};
 use vm::{EnvInfo, LastHashes};
-use evm::{Factory as EvmFactory, Schedule};
+use evm::Schedule;
 use executive::{Executive, Executed, TransactOptions, contract_address};
-use factory::Factories;
+use factory::{Factories, VmFactory};
 use futures::{future, Future};
 use header::{BlockNumber, Header};
 use io::*;
@@ -189,7 +189,7 @@ impl Client {
 
 		let trie_factory = TrieFactory::new(trie_spec);
 		let factories = Factories {
-			vm: EvmFactory::new(config.vm_type.clone(), config.jump_table_size),
+			vm: VmFactory::new(config.vm_type.clone(), config.jump_table_size),
 			trie: trie_factory,
 			accountdb: Default::default(),
 		};
@@ -1673,17 +1673,8 @@ impl BlockChainClient for Client {
 		};
 
 		let chain = self.chain.read();
-		let blocks = filter.bloom_possibilities().iter()
-			.map(move |bloom| {
-				chain.blocks_with_bloom(bloom, from, to)
-			})
-			.flat_map(|m| m)
-			// remove duplicate elements
-			.collect::<HashSet<u64>>()
-			.into_iter()
-			.collect::<Vec<u64>>();
-
-		self.chain.read().logs(blocks, |entry| filter.matches(entry), filter.limit)
+		let blocks = chain.blocks_with_blooms(&filter.bloom_possibilities(), from, to);
+		chain.logs(blocks, |entry| filter.matches(entry), filter.limit)
 	}
 
 	fn filter_traces(&self, filter: TraceFilter) -> Option<Vec<LocalizedTrace>> {
@@ -1910,7 +1901,7 @@ impl MiningBlockChainClient for Client {
 		block
 	}
 
-	fn vm_factory(&self) -> &EvmFactory {
+	fn vm_factory(&self) -> &VmFactory {
 		&self.factories.vm
 	}
 

@@ -339,6 +339,7 @@ impl Configuration {
 				daemon: daemon,
 				logger_config: logger_config.clone(),
 				miner_options: self.miner_options()?,
+				gas_price_percentile: self.args.arg_gas_price_percentile,
 				ntp_servers: self.ntp_servers(),
 				ws_conf: ws_conf,
 				http_conf: http_conf,
@@ -585,7 +586,12 @@ impl Configuration {
 				let mut extra_embed = dev_ui.clone();
 				match self.ui_hosts() {
 					// In case host validation is disabled allow all frame ancestors
-					None => extra_embed.push(("*".to_owned(), ui_port)),
+					None => {
+						// NOTE Chrome does not seem to support "*:<port>"
+						// we use `http(s)://*:<port>` instead.
+						extra_embed.push(("http://*".to_owned(), ui_port));
+						extra_embed.push(("https://*".to_owned(), ui_port));
+					},
 					Some(hosts) => extra_embed.extend(hosts.into_iter().filter_map(|host| {
 						let mut it = host.split(":");
 						let host = it.next();
@@ -1357,6 +1363,7 @@ mod tests {
 			daemon: None,
 			logger_config: Default::default(),
 			miner_options: Default::default(),
+			gas_price_percentile: 50,
 			ntp_servers: vec![
 				"0.parity.pool.ntp.org:123".into(),
 				"1.parity.pool.ntp.org:123".into(),
