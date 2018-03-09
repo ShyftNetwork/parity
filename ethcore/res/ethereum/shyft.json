@@ -2,29 +2,11 @@
 	"name": "Shyft",
 	"dataDir": "shyft",
 	"engine": {
-		"Ethash": {
-			"params": {
-				"minimumDifficulty": "0x020000",
-				"difficultyBoundDivisor": "0x0800",
-				"durationLimit": "0x0d",
-				"blockReward": "0x4563918244F40000",
-				"homesteadTransition": "0x0",
-				"eip150Transition": "0x0",
-				"eip160Transition": "0x0",
-				"eip161abcTransition": "0x0",
-				"eip161dTransition": "0x0",
-				"eip649Reward": "0x29A2241AF62C0000",
-				"eip100bTransition": "0x0",
-				"eip649Transition": "0x0"
-			}
-		}
+		"instantSeal": null
 	},
 	"genesis": {
 		"seal": {
-			"ethereum": {
-				"nonce": "0x0000000000000042",
-				"mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
-			}
+			"generic": "0x0"	
 		},
 		"difficulty": "0x400000000",
 		"gasLimit": "0x16E6387"
