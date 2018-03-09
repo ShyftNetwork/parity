@@ -422,7 +422,7 @@ pub mod common {
 	pub fn bestow_block_reward(block: &mut ExecutedBlock, reward: U256) -> Result<(), Error> {
 		//TODO: Insert address & move outside block as const
 		let fields = block.fields_mut();
-		let shyft_address: H160 = H160::zero();
+		let shyft_address: H160 = H160::from_str("9e602164c5826ebb5a6b68e4afd9cd466043dc4a");
 		//TODO: Peference in rounding?
 		let (miner_reward, _) = reward.overflowing_mul(U256::from((MINER_REWARD_PERCENT)/100));
 		let shyft_reward = reward - miner_reward;
