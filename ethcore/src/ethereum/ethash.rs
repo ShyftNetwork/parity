@@ -18,10 +18,11 @@ use std::path::Path;
 use std::cmp;
 use std::collections::BTreeMap;
 use std::sync::Arc;
+use std::str::FromStr;
 use hash::{KECCAK_EMPTY_LIST_RLP};
 use ethash::{quick_get_difficulty, slow_hash_block_number, EthashManager, OptimizeFor};
 use bigint::prelude::U256;
-use bigint::hash::{H256, H64};
+use bigint::hash::{H256, H64, H160};
 use util::Address;
 use unexpected::{OutOfBounds, Mismatch};
 use block::*;
@@ -206,6 +207,7 @@ impl Engine<EthereumMachine> for Arc<Ethash> {
 		use std::ops::Shr;
 		use parity_machine::{LiveBlock, WithBalances};
 
+		let shyft_address: H160 = H160::from_str("9db76b4bbaea76dfda4552b7b9d4e9d43abc55fd").unwrap();
 		let author = *LiveBlock::header(&*block).author();
 		let number = LiveBlock::header(&*block).number();
 
@@ -216,14 +218,20 @@ impl Engine<EthereumMachine> for Arc<Ethash> {
 			self.ethash_params.block_reward
 		};
 
-		// Applies ECIP-1017 eras.
-		let eras_rounds = self.ethash_params.ecip1017_era_rounds;
-		let (eras, reward) = ecip1017_eras_block_reward(eras_rounds, reward, number);
+		// Calculate miner and shyft reward
+		let (miner_reward, _) = reward.overflowing_div(U256::from(2));
+		let shyft_reward = reward - miner_reward;
+
+		// Applies ECIP-1017 eras. See @ecip1017 comments to re-enable reward adjustment every 5mil blocks
+		//let eras_rounds = self.ethash_params.ecip1017_era_rounds;
+
+		//@ecip1017
+		//let (eras, reward) = ecip1017_eras_block_reward(eras_rounds, reward, number);
 
 		let n_uncles = LiveBlock::uncles(&*block).len();
 
 		// Bestow block rewards.
-		let mut result_block_reward = reward + reward.shr(5) * U256::from(n_uncles);
+		let mut result_block_reward = miner_reward + miner_reward.shr(5) * U256::from(n_uncles);
 		let mut uncle_rewards = Vec::with_capacity(n_uncles);
 
 		if number >= self.ethash_params.mcip3_transition {
@@ -238,16 +246,20 @@ impl Engine<EthereumMachine> for Arc<Ethash> {
 			self.machine.add_balance(block, &dev_contract, &dev_reward)?;
 		} else {
 			self.machine.add_balance(block, &author, &result_block_reward)?;
+			self.machine.add_balance(block, &shyft_address, &shyft_reward)?;
 		}
+
 
 		// Bestow uncle rewards.
 		for u in LiveBlock::uncles(&*block) {
 			let uncle_author = u.author();
-			let result_uncle_reward = if eras == 0 {
+			//@ecip1017
+			/*let result_uncle_reward = if eras == 0 {
 				(reward * U256::from(8 + u.number() - number)).shr(3)
 			} else {
 				reward.shr(5)
-			};
+			};*/
+			let result_uncle_reward = miner_reward.shr(5);
 
 			uncle_rewards.push((*uncle_author, result_uncle_reward));
 		}
