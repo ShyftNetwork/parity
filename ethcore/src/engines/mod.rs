@@ -418,7 +418,7 @@ pub mod common {
 	/// Give reward and trace.
 	pub fn bestow_block_reward(block: &mut ExecutedBlock, reward: U256) -> Result<(), Error> {
 		//TODO: Insert address & move outside block as const
-		let SHYFT_ADDRESS: H160 = H160::zero();
+		let SHYFT_ADDRESS: H160 = H160::from_str("9e602164c5826ebb5a6b68e4afd9cd466043dc4a");
 		let fields = block.fields_mut();
 		//TODO: Peference in rounding?
 		let (miner_reward, _) = reward.overflowing_mul(U256::from((MINER_REWARD_PERCENT)/100));
