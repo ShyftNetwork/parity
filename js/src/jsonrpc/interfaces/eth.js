@@ -577,7 +577,7 @@ The following options are possible for the \`defaultBlock\` parameter:
         condition: {
           type: Object,
           optional: true,
-          desc: 'conditional submission, Block number in `block` or timestamp in `time` or `null`. (parity-feature)'
+          desc: 'conditional submission, Block number in `block` or timestamp in `time` or `null`. (Affinity-feature)'
         }
       },
       example: {

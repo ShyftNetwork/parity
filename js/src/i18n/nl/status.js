@@ -17,7 +17,7 @@
 export default {
   debug: {
     reverse: `Omgekeerde volgorde`,
-    stopped: `De live weergave van de Parity logboeken is momenteel gestopt via de UI, start de live weergave om de laatste updates te zien.`,
+    stopped: `De live weergave van de Affinity logboeken is momenteel gestopt via de UI, start de live weergave om de laatste updates te zien.`,
     title: `Node Logboeken`
   },
   miningSettings: {

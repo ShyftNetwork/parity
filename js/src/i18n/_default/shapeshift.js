@@ -21,7 +21,7 @@ export default {
     minimumMaximum: `{minimum} minimum, {maximum} maximum`
   },
   awaitingExchangeStep: {
-    awaitingCompletion: `Awaiting the completion of the funds exchange and transfer of funds to your Parity account.`,
+    awaitingCompletion: `Awaiting the completion of the funds exchange and transfer of funds to your Affinity account.`,
     receivedInfo: `{shapeshiftLink} has received a deposit of -`
   },
   button: {
@@ -31,7 +31,7 @@ export default {
   },
   completedStep: {
     completed: `{shapeshiftLink} has completed the funds exchange.`,
-    parityFunds: `The change in funds will be reflected in your Parity account shortly.`
+    parityFunds: `The change in funds will be reflected in your Affinity account shortly.`
   },
   errorStep: {
     info: `The funds shifting via {shapeshiftLink} failed with a fatal error on the exchange. The error message received from the exchange is as follow:`
@@ -43,7 +43,7 @@ export default {
       label: `(optional) {coinSymbol} return address`
     },
     terms: {
-      label: `I understand that ShapeShift.io is a 3rd-party service and by using the service any transfer of information and/or funds is completely out of the control of Parity`
+      label: `I understand that ShapeShift.io is a 3rd-party service and by using the service any transfer of information and/or funds is completely out of the control of Affinity`
     },
     typeSelect: {
       hint: `the type of crypto conversion to do`,

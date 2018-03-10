@@ -49,7 +49,7 @@ export default class CompletedStep extends Component {
         <div className={ styles.info }>
           <FormattedMessage
             id='shapeshift.completedStep.parityFunds'
-            defaultMessage='The change in funds will be reflected in your Parity account shortly.'
+            defaultMessage='The change in funds will be reflected in your Affinity account shortly.'
           />
         </div>
       </div>

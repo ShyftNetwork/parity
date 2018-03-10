@@ -21,19 +21,19 @@ export default {
     done: `klaar`,
     upgrade: `werk nu bij`
   },
-  completed: `Het bijwerken naar Parity {newversion} is succesvol voltooid. Klik op "klaar" om het programma automatisch opnieuw op te starten.`,
+  completed: `Het bijwerken naar Affinity {newversion} is succesvol voltooid. Klik op "klaar" om het programma automatisch opnieuw op te starten.`,
   consensus: {
-    capable: `Je huidige versie van Parity voldoet aan de netwerk vereisten.`,
-    capableUntil: `Je huidige versie van Parity voldoet aan de netwerk vereisten tot aan blok {blockNumber}`,
-    incapableSince: `Je huidige versie van Parity voldoet aan de netwerk vereisten vanaf blok {blockNumber}`,
-    unknown: `Je huidige versie van Parity voldoet aan de netwerk vereisten.`
+    capable: `Je huidige versie van Affinity voldoet aan de netwerk vereisten.`,
+    capableUntil: `Je huidige versie van Affinity voldoet aan de netwerk vereisten tot aan blok {blockNumber}`,
+    incapableSince: `Je huidige versie van Affinity voldoet aan de netwerk vereisten vanaf blok {blockNumber}`,
+    unknown: `Je huidige versie van Affinity voldoet aan de netwerk vereisten.`
   },
-  failed: `Het bijwerken naar Parity {newversion} gaf een fout en is mislukt.`,
+  failed: `Het bijwerken naar Affinity {newversion} gaf een fout en is mislukt.`,
   info: {
     currentVersion: `Je huidige versie is {currentversion}`,
-    next: `Klik op "werk nu bij" om het bijwerken van je Parity te starten.`,
+    next: `Klik op "werk nu bij" om het bijwerken van je Affinity te starten.`,
     upgrade: `Een nieuwe versie {newversion} is beschikbaar`,
-    welcome: `Welkom bij de Parity upgrade wizard, deze stelt je in staat om Parity op zeer eenvoudige wijze bij te werken naar de nieuwste versie.`
+    welcome: `Welkom bij de Affinity upgrade wizard, deze stelt je in staat om Affinity op zeer eenvoudige wijze bij te werken naar de nieuwste versie.`
   },
   step: {
     completed: `bijwerken voltooid`,

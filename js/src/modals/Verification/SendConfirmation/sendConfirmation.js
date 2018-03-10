@@ -39,7 +39,7 @@ export default class SendConfirmation extends Component {
         <p>
           <FormattedMessage
             id='verification.confirmation.authorise'
-            defaultMessage='The verification code will be sent to the contract. Please authorize this using the Parity Signer.'
+            defaultMessage='The verification code will be sent to the contract. Please authorize this using the Affinity Signer.'
           />
         </p>);
     }

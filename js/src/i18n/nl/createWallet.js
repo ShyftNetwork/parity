@@ -83,7 +83,7 @@ export default {
     confirmationNeeded: `Voor het aanmaken van dit contract is bevestiging door andere eigenaren van het Wallet vereist`,
     preparing: `Transactie aan het voorbereiden voor verzending op het netwerk`,
     validatingCode: `De contract code van het aangemaakte contract wordt gevalideerd`,
-    waitingConfirm: `Wachten tot de transactie bevestigd is in de Parity Secure Signer`,
+    waitingConfirm: `Wachten tot de transactie bevestigd is in de Affinity Secure Signer`,
     waitingReceipt: `Wachten tot het aanmaken van het contract bevestigd is`
   },
   steps: {

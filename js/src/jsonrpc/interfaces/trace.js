@@ -25,7 +25,7 @@ export default withPreamble(`
 The trace module is for getting a deeper insight into transaction processing.
 It includes two sets of calls; the transaction trace filtering API and the ad-hoc tracing API.
 
-**Note:** In order to use these API Parity must be fully synced with flags \`$ parity --tracing on\`.
+**Note:** In order to use these API Affinity must be fully synced with flags \`$ parity --tracing on\`.
 
 ## The Ad-hoc Tracing API
 
@@ -44,7 +44,7 @@ transaction should be within the most recent 1000 blocks.
 
 ## The Transaction-Trace Filtering API
 
-These APIs allow you to get a full *externality* trace on any transaction executed throughout the Parity chain.
+These APIs allow you to get a full *externality* trace on any transaction executed throughout the Affinity chain.
 Unlike the log filtering API, you are able to search and filter based only upon address information.
 Information returned includes the execution of all \`CREATE\`s, \`SUICIDE\`s and all variants of \`CALL\` together
 with input data, output data, gas usage, amount transferred and the success status of each individual action.

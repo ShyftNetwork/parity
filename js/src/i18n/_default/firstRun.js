@@ -39,11 +39,11 @@ export default {
     accept: `I accept these terms and conditions`
   },
   welcome: {
-    description: `As part of a new installation, the next few steps will guide you through the process of setting up your Parity instance and your associated accounts. Our aim is to make it as simple as possible and to get you up and running in record-time, so please bear with us. Once completed you will have -`,
-    greeting: `Welcome to Parity, the fastest and simplest way to run your node.`,
+    description: `As part of a new installation, the next few steps will guide you through the process of setting up your Affinity instance and your associated accounts. Our aim is to make it as simple as possible and to get you up and running in record-time, so please bear with us. Once completed you will have -`,
+    greeting: `Welcome to Affinity, the fastest and simplest way to run your node.`,
     next: `Click Next to continue your journey.`,
     step: {
-      account: `Created your first Parity account`,
+      account: `Created your first Affinity account`,
       privacy: `Understood our privacy policy & terms of operation`,
       recovery: `Have the ability to recover your account`
     }

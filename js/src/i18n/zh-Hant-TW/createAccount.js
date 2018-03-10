@@ -88,7 +88,7 @@ export default {
     }
   },
   newGeth: {
-    available: `There are currently {count} importable keys available from the Geth keystore which are not already available on your Parity instance. Select the accounts you wish to import and move to the next step to complete the import.`,
+    available: `There are currently {count} importable keys available from the Geth keystore which are not already available on your Affinity instance. Select the accounts you wish to import and move to the next step to complete the import.`,
     noKeys: `現在Geth keystore中沒有可匯入的私鑰`
   },
   newImport: {

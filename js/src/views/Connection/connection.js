@@ -88,7 +88,7 @@ class Connection extends Component {
           <div>
             <FormattedMessage
               id='connection.noConnection'
-              defaultMessage='Unable to make a connection to the Parity Secure API. To update your secure token or to generate a new one, run {newToken} and paste the generated token into the space below.'
+              defaultMessage='Unable to make a connection to the Affinity Secure API. To update your secure token or to generate a new one, run {newToken} and paste the generated token into the space below.'
               values={ {
                 newToken: <span className={ styles.console }>parity signer new-token</span>
               } }
@@ -97,7 +97,7 @@ class Connection extends Component {
           <div className={ styles.timestamp }>
             <FormattedMessage
               id='connection.timestamp'
-              defaultMessage='Ensure that both the Parity node and this machine connecting have computer clocks in-sync with each other and with a timestamp server, ensuring both successful token validation and block operations.'
+              defaultMessage='Ensure that both the Affinity node and this machine connecting have computer clocks in-sync with each other and with a timestamp server, ensuring both successful token validation and block operations.'
             />
           </div>
           <div className={ styles.form }>
@@ -138,7 +138,7 @@ class Connection extends Component {
       <div className={ styles.info }>
         <FormattedMessage
           id='connection.connectingAPI'
-          defaultMessage='Connecting to the Parity Secure API.'
+          defaultMessage='Connecting to the Affinity Secure API.'
         />
       </div>
     );
@@ -149,7 +149,7 @@ class Connection extends Component {
       <div className={ styles.info }>
         <FormattedMessage
           id='connection.connectingNode'
-          defaultMessage='Connecting to the Parity Node. If this informational message persists, please ensure that your Parity node is running and reachable on the network.'
+          defaultMessage='Connecting to the Affinity Node. If this informational message persists, please ensure that your Affinity node is running and reachable on the network.'
         />
       </div>
     );

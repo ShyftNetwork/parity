@@ -17,16 +17,16 @@
 export default {
   add: {
     builtin: {
-      desc: `Experimentele applicaties, ontwikkeld door het Parity team om te demonstreren wat de dapp mogelijkheden, integratie en experimentele opties zijn; en om netwerkbreed client gedrag te controleren.`,
-      label: `Applicaties gebundeld met Parity`
+      desc: `Experimentele applicaties, ontwikkeld door het Affinity team om te demonstreren wat de dapp mogelijkheden, integratie en experimentele opties zijn; en om netwerkbreed client gedrag te controleren.`,
+      label: `Applicaties gebundeld met Affinity`
     },
     label: `zichtbare applicaties`,
     local: {
-      desc: `Alle lokaal door de gebruiker geinstalleerde applicaties die toegang hebben tot de Parity client.`,
+      desc: `Alle lokaal door de gebruiker geinstalleerde applicaties die toegang hebben tot de Affinity client.`,
       label: `Lokaal beschikbare applicaties`
     },
     network: {
-      desc: `Deze applicaties zijn niet bij Parity aangesloten, noch worden ze gepubliceerd door Parity. Alle applicaties blijven in beheer van hun eigen auteur. Zorg ervoor dat je snapt wat het doel van een applicatie is, voordat je ermee aan de slag gaat.`,
+      desc: `Deze applicaties zijn niet bij Affinity aangesloten, noch worden ze gepubliceerd door Affinity. Alle applicaties blijven in beheer van hun eigen auteur. Zorg ervoor dat je snapt wat het doel van een applicatie is, voordat je ermee aan de slag gaat.`,
       label: `Applicaties op het wereldwijde netwerk`
     }
   },
@@ -35,8 +35,8 @@ export default {
     permissions: `toestemming`
   },
   external: {
-    accept: `Ik begrijp dat deze toepassingen niet bij Parity zijn aangesloten`,
-    warning: `Deze applicaties zijn gepuliceerd door derde partijen welke niet verwant zijn aan Parity en zijn dus ook niet door Parity uitgebracht. Alle applicaties blijven in beheer van hun eigen auteur. Zorg ervoor dat je snapt wat het doel van een applicatie is voordat je ermee aan de slag gaat.`
+    accept: `Ik begrijp dat deze toepassingen niet bij Affinity zijn aangesloten`,
+    warning: `Deze applicaties zijn gepuliceerd door derde partijen welke niet verwant zijn aan Affinity en zijn dus ook niet door Affinity uitgebracht. Alle applicaties blijven in beheer van hun eigen auteur. Zorg ervoor dat je snapt wat het doel van een applicatie is voordat je ermee aan de slag gaat.`
   },
   label: `Gedecentraliseerde Applicaties`,
   permissions: {

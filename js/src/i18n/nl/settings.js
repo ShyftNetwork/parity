@@ -17,7 +17,7 @@
 export default {
   background: {
     button_more: `genereer meer`,
-    overview_0: `Het achtergrond patroon dat je nu kunt zien is uniek voor jouw Parity installatie. Het veranderd elke keer als je een nieuw Signer token genereerd. Op deze manier kunnen gedecentraliseerde applicaties niet doen alsof ze betrouwbaar zijn.`,
+    overview_0: `Het achtergrond patroon dat je nu kunt zien is uniek voor jouw Affinity installatie. Het veranderd elke keer als je een nieuw Signer token genereerd. Op deze manier kunnen gedecentraliseerde applicaties niet doen alsof ze betrouwbaar zijn.`,
     overview_1: `Kies het patroon dat je wilt en onthoud het. Dit patroon wordt vanaf nu altijd getoond, tenzij je je browser cache wist of een nieuw Signer token genereerd.`,
     label: `achtergrond`
   },
@@ -32,7 +32,7 @@ export default {
       chain_olympic: `Parity synchroniseert met het Olympic test netwerk`,
       chain_ropsten: `Parity synchroniseert met het Ropsten test netwerk`,
       cmorden_kovan: `Parity synchroniseert met het Morden (Classic) test netwerk`,
-      hint: `de chain waarmee de Parity node synchroniseert`,
+      hint: `de chain waarmee de Affinity node synchroniseert`,
       label: `te synchroniseren chain/netwerk`
     },
     languages: {
@@ -41,32 +41,32 @@ export default {
     },
     loglevels: `Kies hoeveel details er in het logboek worden bijgehouden.`,
     modes: {
-      hint: `de synchronisatie modus van de Parity node`,
+      hint: `de synchronisatie modus van de Affinity node`,
       label: `Synchronisatie modus`,
       mode_active: `Parity synchroniseert de chain continu`,
       mode_dark: `Parity synchroniseert alleen als de RPC actief is`,
       mode_offline: `Parity synchroniseert niet`,
-      mode_passive: `Parity synchroniseert in het begin. Daarna slaapt Parity en wordt regelmatig wakker voor synchronisatie`
+      mode_passive: `Parity synchroniseert in het begin. Daarna slaapt Affinity en wordt regelmatig wakker voor synchronisatie`
     },
-    overview_0: `Pas de Parity node instellingen aan en kies de manier van synchroniseren in dit menu.`,
+    overview_0: `Pas de Affinity node instellingen aan en kies de manier van synchroniseren in dit menu.`,
     label: `parity`
   },
   proxy: {
-    details_0: `In plaats van Parity te openen via het IP adres en poort-nummer, kun je toegang verkrijgen tot het .parity sub-domein door {homeProxy} te bezoeken. Om sub-domein gebaseerde routing in te stellen, dien je de proxy vermelding aan je browser proxy instellingen toe te voegen,`,
+    details_0: `In plaats van Affinity te openen via het IP adres en poort-nummer, kun je toegang verkrijgen tot het .parity sub-domein door {homeProxy} te bezoeken. Om sub-domein gebaseerde routing in te stellen, dien je de proxy vermelding aan je browser proxy instellingen toe te voegen,`,
     details_1: `Om je te helpen met het configureren van je proxy, zijn er instructies beschikbaar voor {windowsLink}, {macOSLink} or {ubuntuLink}.`,
     details_macos: `macOS`,
     details_ubuntu: `Ubuntu`,
     details_windows: `Windows`,
-    overview_0: `Met de proxy instellingen heb je de mogelijkheid om via een makkelijk te onthouden adres toegang te verkrijgen tot Parity en alle onderliggende decentrale applicaties.`,
+    overview_0: `Met de proxy instellingen heb je de mogelijkheid om via een makkelijk te onthouden adres toegang te verkrijgen tot Affinity en alle onderliggende decentrale applicaties.`,
     label: `proxy`
   },
   views: {
     accounts: {
-      description: `Een overzicht van alle aan deze Parity installatie verbonden accounts, inclusief geimporteerde accounts. Verzend transacties, ontvang inkomende transacties, berheer je saldo en financier je accounts.`,
+      description: `Een overzicht van alle aan deze Affinity installatie verbonden accounts, inclusief geimporteerde accounts. Verzend transacties, ontvang inkomende transacties, berheer je saldo en financier je accounts.`,
       label: `Accounts`
     },
     addresses: {
-      description: `Een overzicht van alle door deze Parity installatie beheerde contacten en adresboek items. Monitor en volg accounts waarbij je transactie details met slechts een muisklik kunt weergeven.`,
+      description: `Een overzicht van alle door deze Affinity installatie beheerde contacten en adresboek items. Monitor en volg accounts waarbij je transactie details met slechts een muisklik kunt weergeven.`,
       label: `Adresboek`
     },
     apps: {
@@ -82,11 +82,11 @@ export default {
     overview_2: `Ben je een ontwikkelaar? Voeg enkele functies toe om je contracten te beheren en gebruik te maken van gedecentraliseerde applicaties.`,
     overview_3: `Ben je een miner of draai je een grootschalige node? Voeg enkele functies toe om je alle informatie te geven die je nodig hebt om je node te monitoren.`,
     settings: {
-      description: `Deze weergave. Hiermee kun je Parity aan passen in termen van opties, bediening en look en feel.`,
+      description: `Deze weergave. Hiermee kun je Affinity aan passen in termen van opties, bediening en look en feel.`,
       label: `Instellingen`
     },
     signer: {
-      description: `Het beveiligde transactie beheergebied van de applicatie waar je goedkeuring kunt verlenen aan elke uitgaande transactie die je hebt gemaakt met Parity evenals de transacties die in de wachtrij zijn geplaatst door decentrale applicaties.`,
+      description: `Het beveiligde transactie beheergebied van de applicatie waar je goedkeuring kunt verlenen aan elke uitgaande transactie die je hebt gemaakt met Affinity evenals de transacties die in de wachtrij zijn geplaatst door decentrale applicaties.`,
       label: `Signer`
     },
     status: {

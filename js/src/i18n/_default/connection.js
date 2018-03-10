@@ -15,13 +15,13 @@
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
 export default {
-  connectingAPI: `Connecting to the Parity Secure API.`,
-  connectingNode: `Connecting to the Parity Node. If this informational message persists, please ensure that your Parity node is running and reachable on the network.`,
+  connectingAPI: `Connecting to the Affinity Secure API.`,
+  connectingNode: `Connecting to the Affinity Node. If this informational message persists, please ensure that your Affinity node is running and reachable on the network.`,
   invalidToken: `invalid signer token`,
-  noConnection: `Unable to make a connection to the Parity Secure API. To update your secure token or to generate a new one, run {newToken} and paste the generated token into the space below.`,
-  timestamp: `Ensure that both the Parity node and this machine connecting have computer clocks in-sync with each other and with a timestamp server, ensuring both successful token validation and block operations.`,
+  noConnection: `Unable to make a connection to the Affinity Secure API. To update your secure token or to generate a new one, run {newToken} and paste the generated token into the space below.`,
+  timestamp: `Ensure that both the Affinity node and this machine connecting have computer clocks in-sync with each other and with a timestamp server, ensuring both successful token validation and block operations.`,
   token: {
-    hint: `a generated token from Parity`,
+    hint: `a generated token from Affinity`,
     label: `secure token`
   }
 };

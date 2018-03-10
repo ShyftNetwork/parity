@@ -121,7 +121,7 @@ export default class HardwareStore {
               const info = hwInfo[address];
 
               info.address = address;
-              info.via = 'parity';
+              info.via = 'affinity';
             });
           this.hwAccounts = hwInfo;
           this.updateWallets();

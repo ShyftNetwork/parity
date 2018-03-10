@@ -40,7 +40,7 @@ export default class SendRequest extends Component {
           <p>
             <FormattedMessage
               id='verification.request.authorise'
-              defaultMessage='A verification request will be sent to the contract. Please authorize this using the Parity Signer.'
+              defaultMessage='A verification request will be sent to the contract. Please authorize this using the Affinity Signer.'
             />
           </p>
         );
@@ -66,7 +66,7 @@ export default class SendRequest extends Component {
           <p>
             <FormattedMessage
               id='verification.request.requesting'
-              defaultMessage='Requesting a code from the Parity server and waiting for the puzzle to be put into the contract.'
+              defaultMessage='Requesting a code from the Affinity server and waiting for the puzzle to be put into the contract.'
             />
           </p>
         );

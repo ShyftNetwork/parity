@@ -67,7 +67,7 @@ class Home extends Component {
         title={
           <FormattedMessage
             id='home.title'
-            defaultMessage='Parity Home'
+            defaultMessage='Affinity Home'
           />
         }
       >

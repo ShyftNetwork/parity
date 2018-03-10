@@ -29,7 +29,7 @@ export default {
     none: `No recent Applications history available`,
     title: `Recent Dapps`
   },
-  title: `Parity Home`,
+  title: `Affinity Home`,
   url: {
     none: `No recent URL history available`,
     title: `Web Applications`,

@@ -27,7 +27,7 @@ export default {
   },
 
   parity: {
-    label: 'Parity',
+    label: 'Affinity',
 
     overview_0: 'Diese Einstellungen verändern das Verhalten deines Parity-Knotens.',
 

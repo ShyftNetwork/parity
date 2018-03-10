@@ -42,7 +42,7 @@ export default class NewGeth extends Component {
           <div className={ styles.summary }>
             <FormattedMessage
               id='createAccount.newGeth.available'
-              defaultMessage='There are currently {count} importable keys available from the Geth keystore which are not already available on your Parity instance. Select the accounts you wish to import and move to the next step to complete the import.'
+              defaultMessage='There are currently {count} importable keys available from the Geth keystore which are not already available on your Affinity instance. Select the accounts you wish to import and move to the next step to complete the import.'
               values={ {
                 count: gethAccountsAvailable.length
               } }
@@ -55,7 +55,7 @@ export default class NewGeth extends Component {
         <div className={ styles.summary }>
           <FormattedMessage
             id='createAccount.newGeth.noKeys'
-            defaultMessage='There are currently no importable keys available from the Geth keystore, which are not already available on your Parity instance'
+            defaultMessage='There are currently no importable keys available from the Geth keystore, which are not already available on your Affinity instance'
           />
         </div>
       );

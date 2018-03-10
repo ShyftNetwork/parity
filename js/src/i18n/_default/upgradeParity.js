@@ -15,31 +15,31 @@
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
 export default {
-  busy: `Your upgrade to Parity {newversion} is currently in progress. Please wait until the process completes.`,
+  busy: `Your upgrade to Affinity {newversion} is currently in progress. Please wait until the process completes.`,
   button: {
     close: `close`,
     done: `done`,
     upgrade: `upgrade now`
   },
-  completed: `Your upgrade to Parity {newversion} has been successfully completed. Click "done" to automatically reload the application.`,
+  completed: `Your upgrade to Affinity {newversion} has been successfully completed. Click "done" to automatically reload the application.`,
   consensus: {
-    capable: `Your current Parity version is capable of handling the network requirements.`,
-    capableUntil: `Your current Parity version is capable of handling the network requirements until block {blockNumber}`,
-    incapableSince: `Your current Parity version is incapable of handling the network requirements since block {blockNumber}`,
-    unknown: `Your current Parity version is capable of handling the network requirements.`
+    capable: `Your current Affinity version is capable of handling the network requirements.`,
+    capableUntil: `Your current Affinity version is capable of handling the network requirements until block {blockNumber}`,
+    incapableSince: `Your current Affinity version is incapable of handling the network requirements since block {blockNumber}`,
+    unknown: `Your current Affinity version is capable of handling the network requirements.`
   },
-  failed: `Your upgrade to Parity {newversion} has failed with an error.`,
+  failed: `Your upgrade to Affinity {newversion} has failed with an error.`,
   info: {
     currentVersion: `You are currently running {currentversion}`,
-    next: `Proceed with "upgrade now" to start your Parity upgrade.`,
+    next: `Proceed with "upgrade now" to start your Affinity upgrade.`,
     upgrade: `An upgrade to version {newversion} is available`,
-    welcome: `Welcome to the Parity upgrade wizard, allowing you a completely seamless upgrade experience to the next version of Parity.`
+    welcome: `Welcome to the Affinity upgrade wizard, allowing you a completely seamless upgrade experience to the next version of Affinity.`
   },
   step: {
     completed: `upgrade completed`,
     error: `error`,
     info: `upgrade available`,
-    updating: `upgrading parity`
+    updating: `upgrading Affinity`
   },
   version: {
     unknown: `unknown`

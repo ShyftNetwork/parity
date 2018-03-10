@@ -1,5 +1,6 @@
 
 [mining]
+extra_data = "Affinity"
 # New pending block will be created for all transactions (both local and external).
 reseal_on_txs = "all"
 # New pending block will be created only once per 4000 milliseconds.

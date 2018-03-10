@@ -19,11 +19,11 @@ export default {
     close: `Close`
   },
   label: {
-    parity: `Parity`,
+    parity: `Affinity`,
     signer: `Signer`
   },
   title: {
     accounts: `Default Account`,
-    signer: `Parity Signer: Pending`
+    signer: `Affinity Signer: Pending`
   }
 };

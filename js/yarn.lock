@@ -192,6 +192,12 @@ array.prototype.find@^2.0.1:
     define-properties "^1.1.2"
     es-abstract "^1.7.0"
 
+arraybuffer-loader@0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/arraybuffer-loader/-/arraybuffer-loader-0.2.2.tgz#8e7294d151aac8ed70a82e773ead05590db70e29"
+  dependencies:
+    loader-utils "^0.2.15"
+
 arrify@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
@@ -2570,6 +2576,10 @@ emojis-list@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
 
+empty-module@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/empty-module/-/empty-module-0.0.2.tgz#13b4dd8d4afeddd35e50c18dcd788c51087f1545"
+
 encodeurl@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/encodeurl/-/encodeurl-1.0.1.tgz#79e3d58655346909fe6f0f45a5de68103b294d20"
@@ -3074,6 +3084,18 @@ fastparse@^1.1.1:
 fbjs@^0.8.1, fbjs@^0.8.4, fbjs@^0.8.6:
   version "0.8.12"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.12.tgz#10b5d92f76d45575fd63a217d4ea02bea2f8ed04"
+  dependencies:
+    core-js "^1.0.0"
+    isomorphic-fetch "^2.1.1"
+    loose-envify "^1.0.0"
+    object-assign "^4.1.0"
+    promise "^7.1.1"
+    setimmediate "^1.0.5"
+    ua-parser-js "^0.7.9"
+
+fbjs@^0.8.16:
+  version "0.8.16"
+  resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.16.tgz#5e67432f550dc41b572bf55847b8aca64e5337db"
   dependencies:
     core-js "^1.0.0"
     isomorphic-fetch "^2.1.1"
@@ -4608,9 +4630,9 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.3.6"
 
-jsqr@^0.2.1:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/jsqr/-/jsqr-0.2.2.tgz#8c1f0279fb7c94542aaa9e8aeb7c722d523ea092"
+"jsqr@git+https://github.com/cozmo/jsQR.git":
+  version "1.0.4"
+  resolved "git+https://github.com/cozmo/jsQR.git#d37c764bf43a41ed7c6aa1c17cbdf21b7f9cb69e"
 
 jsx-ast-utils@^1.3.4:
   version "1.4.0"
@@ -5028,7 +5050,7 @@ longest@^1.0.0, longest@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
 
-loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.2.0:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.2.0, loose-envify@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.3.1.tgz#d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848"
   dependencies:
@@ -5077,9 +5099,20 @@ map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/map-obj/-/map-obj-1.0.1.tgz#d933ceb9205d82bdcf4886f6742bdc2b4dea146d"
 
+markdown-loader@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-loader/-/markdown-loader-2.0.0.tgz#421862d38c4224fd3615eb648017ea385b562d78"
+  dependencies:
+    loader-utils "^0.2.16"
+    marked "^0.3.6"
+
 marked@0.3.6:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.6.tgz#b2c6c618fccece4ef86c4fc6cb8a7cbf5aeda8d7"
+
+marked@^0.3.6:
+  version "0.3.17"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.17.tgz#607f06668b3c6b1246b28f13da76116ac1aa2d2b"
 
 material-ui-chip-input@0.11.1:
   version "0.11.1"
@@ -6427,6 +6460,14 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
+prop-types@^15.5.8:
+  version "15.6.1"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
+
 propagate@0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/propagate/-/propagate-0.4.0.tgz#f3fcca0a6fe06736a7ba572966069617c130b481"
@@ -6485,6 +6526,10 @@ push.js@0.0.11:
 q@^1.1.2:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.0.tgz#dd01bac9d06d30e6f219aecb8253ee9ebdc308f1"
+
+qrcode-generator@1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/qrcode-generator/-/qrcode-generator-1.3.1.tgz#eedcbe967ceba5585f0f4b8d9d7916961a335369"
 
 qs@6.2.0:
   version "6.2.0"
@@ -6716,12 +6761,13 @@ react-proxy@^3.0.0-alpha.0:
   dependencies:
     lodash "^4.6.1"
 
-react-qr-reader@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-qr-reader/-/react-qr-reader-1.0.3.tgz#9cd9e526cb2ae3ef2eabd7b3798172b8990d11ce"
+react-qr-reader@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-qr-reader/-/react-qr-reader-2.0.1.tgz#f7be785e8c880d7e68423fc129802994f70b6b58"
   dependencies:
-    jsqr "^0.2.1"
-    webrtc-adapter "^2.0.8"
+    jsqr "https://github.com/cozmo/jsQR.git"
+    prop-types "^15.5.8"
+    webrtc-adapter "^5.0.6"
 
 react-redux@4.4.6:
   version "4.4.6"
@@ -7180,6 +7226,12 @@ roadrunner@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/roadrunner/-/roadrunner-1.1.0.tgz#1180a30d64e1970d8f55dd8cb0da8ffccecad71e"
 
+rtcpeerconnection-shim@^1.1.13:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/rtcpeerconnection-shim/-/rtcpeerconnection-shim-1.2.9.tgz#612bd7a63f4d9a76d6064e3963028fee62b67378"
+  dependencies:
+    sdp "^2.6.0"
+
 rucksack-css@0.9.1:
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/rucksack-css/-/rucksack-css-0.9.1.tgz#da7eba4c67bd05b00cbf4c834305c5fe55375de1"
@@ -7247,11 +7299,11 @@ scryptsy@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/scryptsy/-/scryptsy-2.0.0.tgz#262c36f0231cfa7654e2363fa394cd2dec66f378"
 
-sdp@^1.0.0:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/sdp/-/sdp-1.4.1.tgz#68e1a8d88e3a10ae098aaf32b147b70851b42165"
+sdp@^2.3.0, sdp@^2.6.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/sdp/-/sdp-2.7.0.tgz#02b64ea0c29d73179afa19794e466b123b1b29f3"
 
-secp256k1@3.2.5, secp256k1@^3.0.1:
+secp256k1@^3.0.1:
   version "3.2.5"
   resolved "https://registry.yarnpkg.com/secp256k1/-/secp256k1-3.2.5.tgz#0dde5b27e5021665f6dffca7b2c3e010c6c13c93"
   dependencies:
@@ -8385,11 +8437,12 @@ webpack@2.2.1:
     webpack-sources "^0.1.4"
     yargs "^6.0.0"
 
-webrtc-adapter@^2.0.8:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/webrtc-adapter/-/webrtc-adapter-2.1.0.tgz#612b5bc6ce8e73c9d0660038a21f9255a867bf3e"
+webrtc-adapter@5.0.6, webrtc-adapter@^5.0.6:
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/webrtc-adapter/-/webrtc-adapter-5.0.6.tgz#7946fca194dadf869bb6c8cae1011dfda03f40c7"
   dependencies:
-    sdp "^1.0.0"
+    rtcpeerconnection-shim "^1.1.13"
+    sdp "^2.3.0"
 
 websocket@1.0.24:
   version "1.0.24"

@@ -164,7 +164,7 @@ export default class UpgradeParity extends Component {
         <div className={ styles.text }>
           <FormattedMessage
             id='upgradeParity.busy'
-            defaultMessage='Your upgrade to Parity {newversion} is currently in progress. Please wait until the process completes.'
+            defaultMessage='Your upgrade to Affinity {newversion} is currently in progress. Please wait until the process completes.'
             values={ {
               newversion: <div className={ styles.version }>{ newversion }</div>
             } }
@@ -181,7 +181,7 @@ export default class UpgradeParity extends Component {
         <div className={ styles.text }>
           <FormattedMessage
             id='upgradeParity.completed'
-            defaultMessage='Your upgrade to Parity {newversion} has been successfully completed. Click "done" to automatically reload the application.'
+            defaultMessage='Your upgrade to Affinity {newversion} has been successfully completed. Click "done" to automatically reload the application.'
             values={ {
               newversion: <div className={ styles.version }>{ newversion }</div>
             } }
@@ -200,7 +200,7 @@ export default class UpgradeParity extends Component {
         <div className={ styles.text }>
           <FormattedMessage
             id='upgradeParity.failed'
-            defaultMessage='Your upgrade to Parity {newversion} has failed with an error.'
+            defaultMessage='Your upgrade to Affinity {newversion} has failed with an error.'
             values={ {
               newversion: <div className={ styles.version }>{ newversion }</div>
             } }
@@ -221,7 +221,7 @@ export default class UpgradeParity extends Component {
           <div>
             <FormattedMessage
               id='upgradeParity.info.welcome'
-              defaultMessage='Welcome to the Parity upgrade wizard, allowing you a completely seamless upgrade experience to the next version of Parity.'
+              defaultMessage='Welcome to the Affinity upgrade wizard, allowing you a completely seamless upgrade experience to the next version of Parity.'
             />
           </div>
           <div>
@@ -253,7 +253,7 @@ export default class UpgradeParity extends Component {
           <div>
             <FormattedMessage
               id='upgradeParity.info.next'
-              defaultMessage='Proceed with "upgrade now" to start your Parity upgrade.'
+              defaultMessage='Proceed with "upgrade now" to start your Affinity upgrade.'
             />
           </div>
         </div>
@@ -270,14 +270,14 @@ export default class UpgradeParity extends Component {
         return (
           <FormattedMessage
             id='upgradeParity.consensus.capable'
-            defaultMessage='Your current Parity version is capable of handling the network requirements.'
+            defaultMessage='Your current Affinity version is capable of handling the network requirements.'
           />
         );
       } else if (consensusCapability.capableUntil) {
         return (
           <FormattedMessage
             id='upgradeParity.consensus.capableUntil'
-            defaultMessage='Your current Parity version is capable of handling the network requirements until block {blockNumber}'
+            defaultMessage='Your current Affinity version is capable of handling the network requirements until block {blockNumber}'
             values={ {
               blockNumber: consensusCapability.capableUntil
             } }
@@ -287,7 +287,7 @@ export default class UpgradeParity extends Component {
         return (
           <FormattedMessage
             id='upgradeParity.consensus.incapableSince'
-            defaultMessage='Your current Parity version is incapable of handling the network requirements since block {blockNumber}'
+            defaultMessage='Your current Affinity version is incapable of handling the network requirements since block {blockNumber}'
             values={ {
               blockNumber: consensusCapability.incapableSince
             } }
@@ -299,7 +299,7 @@ export default class UpgradeParity extends Component {
     return (
       <FormattedMessage
         id='upgradeParity.consensus.unknown'
-        defaultMessage='Your current Parity version is capable of handling the network requirements.'
+        defaultMessage='Your current Affinity version is capable of handling the network requirements.'
       />
     );
   }

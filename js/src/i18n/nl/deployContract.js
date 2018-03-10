@@ -76,7 +76,7 @@ export default {
     preparing: `Transactie aan het voorbereiden om te verzenden op het netwerk`,
     validatingCode: `De contract code van het aangemaakte contract valideren`,
     waitReceipt: `Wachten tot het aanmaken van het contract bevestigd is`,
-    waitSigner: `Wachten tot de transactie bevestigd is in de Parity Secure Signer`
+    waitSigner: `Wachten tot de transactie bevestigd is in de Affinity Secure Signer`
   },
   title: {
     completed: `voltooid`,

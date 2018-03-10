@@ -27,7 +27,7 @@ export default {
     sent: `The verification code has been sent to {receiver}.`
   },
   confirmation: {
-    authorise: `The verification code will be sent to the contract. Please authorize this using the Parity Signer.`,
+    authorise: `The verification code will be sent to the contract. Please authorize this using the Affinity Signer.`,
     windowOpen: `Please keep this window open.`
   },
   done: {
@@ -56,8 +56,8 @@ export default {
   },
   loading: `Loading verification data.`,
   request: {
-    authorise: `A verification request will be sent to the contract. Please authorize this using the Parity Signer.`,
-    requesting: `Requesting a code from the Parity server and waiting for the puzzle to be put into the contract.`,
+    authorise: `A verification request will be sent to the contract. Please authorize this using the Affinity Signer.`,
+    requesting: `Requesting a code from the Affinity server and waiting for the puzzle to be put into the contract.`,
     windowOpen: `Please keep this window open.`
   },
   sms: {

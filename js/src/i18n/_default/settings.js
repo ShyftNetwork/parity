@@ -17,22 +17,22 @@
 export default {
   background: {
     button_more: `generate more`,
-    overview_0: `The background pattern you can see right now is unique to your Parity installation. It will change every time you create a new Signer token. This is so that decentralized applications cannot pretend to be trustworthy.`,
+    overview_0: `The background pattern you can see right now is unique to your Affinity installation. It will change every time you create a new Signer token. This is so that decentralized applications cannot pretend to be trustworthy.`,
     overview_1: `Pick a pattern you like and memorize it. This Pattern will always be shown from now on, unless you clear your browser cache or use a new Signer token.`,
     label: `background`
   },
   parity: {
     chains: {
-      chain_classic: `Parity syncs to the Ethereum Classic network`,
-      chain_dev: `Parity uses a local development chain`,
-      chain_expanse: `Parity syncs to the Expanse network`,
-      chain_musicoin: `Parity syncs to the Musicoin network`,
-      chain_foundation: `Parity syncs to the Ethereum network launched by the Ethereum Foundation`,
-      chain_kovan: `Parity syncs to the Kovan test network`,
-      chain_olympic: `Parity syncs to the Olympic test network`,
-      chain_ropsten: `Parity syncs to the Ropsten test network`,
-      cmorden_kovan: `Parity syncs to Morden (Classic) test network`,
-      hint: `the chain for the Parity node to sync to`,
+      chain_classic: `Affinity syncs to the Ethereum Classic network`,
+      chain_dev: `Affinity uses a local development chain`,
+      chain_expanse: `Affinity syncs to the Expanse network`,
+      chain_musicoin: `Affinity syncs to the Musicoin network`,
+      chain_foundation: `Affinity syncs to the Ethereum network launched by the Ethereum Foundation`,
+      chain_kovan: `Affinity syncs to the Kovan test network`,
+      chain_olympic: `Affinity syncs to the Olympic test network`,
+      chain_ropsten: `Affinity syncs to the Ropsten test network`,
+      cmorden_kovan: `Affinity syncs to Morden (Classic) test network`,
+      hint: `the chain for the Affinity node to sync to`,
       label: `chain/network to sync`
     },
     languages: {
@@ -41,32 +41,32 @@ export default {
     },
     loglevels: `Choose the different logs level.`,
     modes: {
-      hint: `the syncing mode for the Parity node`,
+      hint: `the syncing mode for the Affinity node`,
       label: `mode of operation`,
-      mode_active: `Parity continuously syncs the chain`,
-      mode_dark: `Parity syncs only when the RPC is active`,
-      mode_offline: `Parity doesn't sync`,
-      mode_passive: `Parity syncs initially, then sleeps and wakes regularly to resync`
+      mode_active: `Affinity continuously syncs the chain`,
+      mode_dark: `Affinity syncs only when the RPC is active`,
+      mode_offline: `Affinity doesn't sync`,
+      mode_passive: `Affinity syncs initially, then sleeps and wakes regularly to resync`
     },
-    overview_0: `Control the Parity node settings and nature of syncing via this interface.`,
-    label: `parity`
+    overview_0: `Control the Affinity node settings and nature of syncing via this interface.`,
+    label: `Affinity`
   },
   proxy: {
-    details_0: `Instead of accessing Parity via the IP address and port, you will be able to access it via the .web3.site subdomain, by visiting {homeProxy}. To setup subdomain-based routing, you need to add the relevant proxy entries to your browser,`,
+    details_0: `Instead of accessing Affinity via the IP address and port, you will be able to access it via the .web3.site subdomain, by visiting {homeProxy}. To setup subdomain-based routing, you need to add the relevant proxy entries to your browser,`,
     details_1: `To learn how to configure the proxy, instructions are provided for {windowsLink}, {macOSLink} or {ubuntuLink}.`,
     details_macos: `macOS`,
     details_ubuntu: `Ubuntu`,
     details_windows: `Windows`,
-    overview_0: `The proxy setup allows you to access Parity and all associated decentralized applications via memorable addresses.`,
+    overview_0: `The proxy setup allows you to access Affinity and all associated decentralized applications via memorable addresses.`,
     label: `proxy`
   },
   views: {
     accounts: {
-      description: `A list of all the accounts associated with and imported into this Parity instance. Send transactions, receive incoming values, manage your balances and fund your accounts.`,
+      description: `A list of all the accounts associated with and imported into this Affinity instance. Send transactions, receive incoming values, manage your balances and fund your accounts.`,
       label: `Accounts`
     },
     addresses: {
-      description: `A list of all contacts and address book entries managed by this Parity instance. Watch accounts and have the details available at the click of a button when transacting.`,
+      description: `A list of all contacts and address book entries managed by this Affinity instance. Watch accounts and have the details available at the click of a button when transacting.`,
       label: `Addressbook`
     },
     apps: {

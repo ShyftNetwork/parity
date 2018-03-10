@@ -83,8 +83,8 @@ export default {
     }
   },
   newGeth: {
-    available: `Er zijn momenteel {count} importeerbare sleutels (keys) beschikbaar vanuit Geth keystore, welke nog niet in je Parity installatie beschikbaar zijn. Selecteer de accounts die je wilt importeren en ga verder naar de volgende stap om het importeren te voltooien.`,
-    noKeys: `Er zijn momenteel geen importeerbare sleutels (keys) beschikbaar in de Geth keystore; of ze zijn al in je Parity installatie beschikbaar`
+    available: `Er zijn momenteel {count} importeerbare sleutels (keys) beschikbaar vanuit Geth keystore, welke nog niet in je Affinity installatie beschikbaar zijn. Selecteer de accounts die je wilt importeren en ga verder naar de volgende stap om het importeren te voltooien.`,
+    noKeys: `Er zijn momenteel geen importeerbare sleutels (keys) beschikbaar in de Geth keystore; of ze zijn al in je Affinity installatie beschikbaar`
   },
   newImport: {
     file: {
@@ -148,7 +148,7 @@ export default {
       label: `account herstel zin`
     },
     windowsKey: {
-      label: `Sleutel (key) is aangemaakt met Parity <1.4.5 op Windows`
+      label: `Sleutel (key) is aangemaakt met Affinity <1.4.5 op Windows`
     }
   },
   title: {

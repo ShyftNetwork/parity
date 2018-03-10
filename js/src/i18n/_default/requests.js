@@ -19,6 +19,6 @@ export default {
     error: `An error occured:`,
     transactionMined: `Transaction mined at block #{blockNumber} ({blockHeight} blocks ago)`,
     transactionSent: `Transaction sent to network with hash`,
-    waitingForSigner: `Waiting for authorization in the Parity Signer`
+    waitingForSigner: `Waiting for authorization in the Affinity Signer`
   }
 };

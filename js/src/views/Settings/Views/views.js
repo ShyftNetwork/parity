@@ -76,7 +76,7 @@ class Views extends Component {
                 />,
                 <FormattedMessage
                   id='settings.views.accounts.description'
-                  defaultMessage='A list of all the accounts associated with and imported into this Parity instance. Send transactions, receive incoming values, manage your balances and fund your accounts.'
+                  defaultMessage='A list of all the accounts associated with and imported into this Affinity instance. Send transactions, receive incoming values, manage your balances and fund your accounts.'
                 />
               )
             }
@@ -87,7 +87,7 @@ class Views extends Component {
                 />,
                 <FormattedMessage
                   id='settings.views.addresses.description'
-                  defaultMessage='A list of all contacts and address book entries managed by this Parity instance. Watch accounts and have the details available at the click of a button when transacting.'
+                  defaultMessage='A list of all contacts and address book entries managed by this Affinity instance. Watch accounts and have the details available at the click of a button when transacting.'
                 />
               )
             }

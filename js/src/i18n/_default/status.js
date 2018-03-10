@@ -17,7 +17,7 @@
 export default {
   debug: {
     reverse: `Reverse Order`,
-    stopped: `Refresh and display of logs from Parity is currently stopped via the UI, start it to see the latest updates.`,
+    stopped: `Refresh and display of logs from Affinity is currently stopped via the UI, start it to see the latest updates.`,
     title: `Node Logs`
   },
   health: {

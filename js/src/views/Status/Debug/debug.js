@@ -69,7 +69,7 @@ export default class Debug extends Component {
       <div className={ styles.stopped }>
         <FormattedMessage
           id='status.debug.stopped'
-          defaultMessage='Refresh and display of logs from Parity is currently stopped via the UI, start it to see the latest updates.'
+          defaultMessage='Refresh and display of logs from Affinity is currently stopped via the UI, start it to see the latest updates.'
         />
       </div>
     );

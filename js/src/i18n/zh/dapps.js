@@ -23,7 +23,7 @@ export default {
     },
     label: `visible applications可见的应用`, // visible applications
     local: {
-      desc: `All applications installed locally on the machine by the user for access by the Parity client.`,
+      desc: `All applications installed locally on the machine by the user for access by the Affinity client.`,
       label: `本地可用的应用`// Applications locally available
     },
     network: {

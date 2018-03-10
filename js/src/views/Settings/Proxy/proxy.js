@@ -42,7 +42,7 @@ export default class Proxy extends Component {
             <div>
               <FormattedMessage
                 id='settings.proxy.overview_0'
-                defaultMessage='The proxy setup allows you to access Parity and all associated decentralized applications via memorable addresses.'
+                defaultMessage='The proxy setup allows you to access Affinity and all associated decentralized applications via memorable addresses.'
               />
             </div>
           </div>
@@ -51,7 +51,7 @@ export default class Proxy extends Component {
               <div>
                 <FormattedMessage
                   id='settings.proxy.details_0'
-                  defaultMessage='Instead of accessing Parity via the IP address and port, you will be able to access it via the .web3.site subdomain, by visiting {homeProxy}. To setup subdomain-based routing, you need to add the relevant proxy entries to your browser,'
+                  defaultMessage='Instead of accessing Affinity via the IP address and port, you will be able to access it via the .web3.site subdomain, by visiting {homeProxy}. To setup subdomain-based routing, you need to add the relevant proxy entries to your browser,'
                   values={ {
                     homeProxy: <span className={ layout.console }>http://parity.web3.site/</span>
                   } }

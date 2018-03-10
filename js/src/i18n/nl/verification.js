@@ -27,7 +27,7 @@ export default {
     sent: `De verificatie code is verstuurd naar {receiver}.`
   },
   confirmation: {
-    authorise: `De verificatie code zal naar het contract worden verzonden. Gebruik de Parity Signer om dit goed te keuren.`,
+    authorise: `De verificatie code zal naar het contract worden verzonden. Gebruik de Affinity Signer om dit goed te keuren.`,
     windowOpen: `Houd dit scherm open.`
   },
   done: {
@@ -56,7 +56,7 @@ export default {
   },
   loading: `Laden van verificatie data.`,
   request: {
-    authorise: `Een verificatie verzoek zal naar het contract worden verzonden. Gebruik de Parity Signer om dit goed te keuren.`,
+    authorise: `Een verificatie verzoek zal naar het contract worden verzonden. Gebruik de Affinity Signer om dit goed te keuren.`,
     requesting: `Een code aanvragen bij de Parity-server en wachten tot de puzzel in het contract opgenomen wordt.`,
     windowOpen: `Houd dit scherm open.`
   },

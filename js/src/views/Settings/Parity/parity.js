@@ -53,7 +53,7 @@ export default class Parity extends Component {
             <div>
               <FormattedMessage
                 id='settings.parity.overview_0'
-                defaultMessage='Control the Parity node settings and nature of syncing via this interface.'
+                defaultMessage='Control the Affinity node settings and nature of syncing via this interface.'
               />
             </div>
           </div>
@@ -138,7 +138,7 @@ export default class Parity extends Component {
         hint={
           <FormattedMessage
             id='settings.parity.modes.hint'
-            defaultMessage='the syncing mode for the Parity node'
+            defaultMessage='the syncing mode for the Affinity node'
           />
         }
         label={
@@ -162,7 +162,7 @@ export default class Parity extends Component {
           this.renderItem('passive', (
             <FormattedMessage
               id='settings.parity.modes.mode_passive'
-              defaultMessage='Parity syncs initially, then sleeps and wakes regularly to resync'
+              defaultMessage='Affinity syncs initially, then sleeps and wakes regularly to resync'
             />
           ))
         }
@@ -170,7 +170,7 @@ export default class Parity extends Component {
           this.renderItem('dark', (
             <FormattedMessage
               id='settings.parity.modes.mode_dark'
-              defaultMessage='Parity syncs only when the RPC is active'
+              defaultMessage='Affinity syncs only when the RPC is active'
             />
           ))
         }
@@ -178,7 +178,7 @@ export default class Parity extends Component {
           this.renderItem('offline', (
             <FormattedMessage
               id='settings.parity.modes.mode_offline'
-              defaultMessage="Parity doesn't sync"
+              defaultMessage="Affinity doesn't sync"
             />
           ))
         }
@@ -195,7 +195,7 @@ export default class Parity extends Component {
         hint={
           <FormattedMessage
             id='settings.parity.chains.hint'
-            defaultMessage='the chain for the Parity node to sync to'
+            defaultMessage='the chain for the Affinity node to sync to'
           />
         }
         label={
@@ -211,7 +211,7 @@ export default class Parity extends Component {
           this.renderItem('foundation', (
             <FormattedMessage
               id='settings.parity.chains.chain_foundation'
-              defaultMessage='Parity syncs to the Ethereum network launched by the Ethereum Foundation'
+              defaultMessage='Affinity syncs to the Ethereum network launched by the Ethereum Foundation'
             />
           ))
         }
@@ -219,7 +219,7 @@ export default class Parity extends Component {
           this.renderItem('kovan', (
             <FormattedMessage
               id='settings.parity.chains.chain_kovan'
-              defaultMessage='Parity syncs to the Kovan test network'
+              defaultMessage='Affinity syncs to the Kovan test network'
             />
           ))
         }
@@ -227,7 +227,7 @@ export default class Parity extends Component {
           this.renderItem('olympic', (
             <FormattedMessage
               id='settings.parity.chains.chain_olympic'
-              defaultMessage='Parity syncs to the Olympic test network'
+              defaultMessage='Affinity syncs to the Olympic test network'
             />
           ))
         }
@@ -235,7 +235,7 @@ export default class Parity extends Component {
           this.renderItem('morden', (
             <FormattedMessage
               id='settings.parity.chains.cmorden_kovan'
-              defaultMessage='Parity syncs to Morden (Classic) test network'
+              defaultMessage='Affinity syncs to Morden (Classic) test network'
             />
           ))
         }
@@ -243,7 +243,7 @@ export default class Parity extends Component {
           this.renderItem('ropsten', (
             <FormattedMessage
               id='settings.parity.chains.chain_ropsten'
-              defaultMessage='Parity syncs to the Ropsten test network'
+              defaultMessage='Affinity syncs to the Ropsten test network'
             />
           ))
         }
@@ -251,7 +251,7 @@ export default class Parity extends Component {
           this.renderItem('classic', (
             <FormattedMessage
               id='settings.parity.chains.chain_classic'
-              defaultMessage='Parity syncs to the Ethereum Classic network'
+              defaultMessage='Affinity syncs to the Ethereum Classic network'
             />
           ))
         }
@@ -259,7 +259,7 @@ export default class Parity extends Component {
           this.renderItem('expanse', (
             <FormattedMessage
               id='settings.parity.chains.chain_expanse'
-              defaultMessage='Parity syncs to the Expanse network'
+              defaultMessage='Affinity syncs to the Expanse network'
             />
           ))
         }
@@ -267,7 +267,7 @@ export default class Parity extends Component {
           this.renderItem('musicoin', (
             <FormattedMessage
               id='settings.parity.chains.chain_musicoin'
-              defaultMessage='Parity syncs to the Musicoin network'
+              defaultMessage='Affinity syncs to the Musicoin network'
             />
           ))
         }
@@ -275,7 +275,7 @@ export default class Parity extends Component {
           this.renderItem('dev', (
             <FormattedMessage
               id='settings.parity.chains.chain_dev'
-              defaultMessage='Parity uses a local development chain'
+              defaultMessage='Affinity uses a local development chain'
             />
           ))
         }

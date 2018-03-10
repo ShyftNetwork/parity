@@ -187,7 +187,7 @@ class Requests extends Component {
     return (
       <FormattedMessage
         id='requests.status.waitingForSigner'
-        defaultMessage='Waiting for authorization in the Parity Signer'
+        defaultMessage='Waiting for authorization in the Affinity Signer'
       />
     );
   }

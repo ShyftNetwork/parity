@@ -67,7 +67,7 @@ class Background extends Component {
             <div>
               <FormattedMessage
                 id='settings.background.overview_0'
-                defaultMessage='The background pattern you can see right now is unique to your Parity installation. It will change every time you create a new Signer token. This is so that decentralized applications cannot pretend to be trustworthy.'
+                defaultMessage='The background pattern you can see right now is unique to your Affinity installation. It will change every time you create a new Signer token. This is so that decentralized applications cannot pretend to be trustworthy.'
               />
             </div>
             <div>

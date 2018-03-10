@@ -48,7 +48,7 @@ export default class AwaitingExchangeStep extends Component {
         <div className={ styles.info }>
           <FormattedMessage
             id='shapeshift.awaitingExchangeStep.awaitingCompletion'
-            defaultMessage='Awaiting the completion of the funds exchange and transfer of funds to your Parity account.'
+            defaultMessage='Awaiting the completion of the funds exchange and transfer of funds to your Affinity account.'
           />
         </div>
       </div>

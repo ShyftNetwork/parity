@@ -615,7 +615,7 @@ export default {
 
   nodeName: {
     section: SECTION_NODE,
-    desc: 'Returns node name, set when starting parity with `--identity NAME`.',
+    desc: 'Returns node name, set when starting Affinity with `--identity NAME`.',
     params: [],
     returns: {
       type: String,
@@ -874,7 +874,7 @@ export default {
   },
 
   versionInfo: {
-    desc: 'Provides information about running version of Parity.',
+    desc: 'Provides information about running version of Affinity.',
     params: [],
     returns: {
       type: Object,
@@ -1713,7 +1713,7 @@ export default {
 
   dropNonReservedPeers: {
     subdoc: SUBDOC_SET,
-    desc: 'Set Parity to drop all non-reserved peers. To restore default behavior call [parity_acceptNonReservedPeers](#parity_acceptnonreservedpeers).',
+    desc: 'Set Affinity to drop all non-reserved peers. To restore default behavior call [parity_acceptNonReservedPeers](#parity_acceptnonreservedpeers).',
     params: [],
     returns: {
       type: Boolean,
@@ -1724,7 +1724,7 @@ export default {
 
   acceptNonReservedPeers: {
     subdoc: SUBDOC_SET,
-    desc: 'Set Parity to accept non-reserved peers (default behavior).',
+    desc: 'Set Affinity to accept non-reserved peers (default behavior).',
     params: [],
     returns: {
       type: Boolean,
@@ -1752,7 +1752,7 @@ export default {
 
   setChain: {
     subdoc: SUBDOC_SET,
-    desc: 'Sets the network spec file Parity is using.',
+    desc: 'Sets the network spec file Affinity is using.',
     params: [
       {
         type: String,
@@ -1769,11 +1769,11 @@ export default {
 
   setMode: {
     subdoc: SUBDOC_SET,
-    desc: 'Changes the operating mode of Parity.',
+    desc: 'Changes the operating mode of Affinity.',
     params: [
       {
         type: String,
-        desc: 'The mode to set, one of:\n  * `"active"` - Parity continuously syncs the chain.\n  * `"passive"` - Parity syncs initially, then sleeps and wakes regularly to resync.\n  * `"dark"` - Parity syncs only when the RPC is active.\n  * `"offline"` - Parity doesn\'t sync.\n',
+        desc: 'The mode to set, one of:\n  * `"active"` - Affinity continuously syncs the chain.\n  * `"passive"` - Affinity syncs initially, then sleeps and wakes regularly to resync.\n  * `"dark"` - Affinity syncs only when the RPC is active.\n  * `"offline"` - Affinity doesn\'t sync.\n',
         example: 'passive'
       }
     ],
@@ -1828,7 +1828,7 @@ export default {
         },
         binary: {
           type: Data,
-          desc: 'Keccak-256 checksum of the release parity binary, if known.',
+          desc: 'Keccak-256 checksum of the release Affinity binary, if known.',
           optional: true
         }
       },
@@ -1838,7 +1838,7 @@ export default {
 
   executeUpgrade: {
     subdoc: SUBDOC_SET,
-    desc: 'Attempts to upgrade Parity to the version specified in [parity_upgradeReady](#parity_upgradeready).',
+    desc: 'Attempts to upgrade Affinity to the version specified in [parity_upgradeReady](#parity_upgradeready).',
     params: [],
     returns: {
       type: Boolean,

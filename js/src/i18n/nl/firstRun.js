@@ -37,11 +37,11 @@ export default {
     accept: `Ik accepteer de voorwaarden en condities`
   },
   welcome: {
-    description: `Als onderdeel van een nieuwe installatie, begeleiden we je in de enkele hierna volgende stappen met het configureren van je Parity node en jouw bijbehorende accounts. Ons doel hiervan is om het je zo gemakkelijk mogelijk te maken and zodat je binnen de kortste tijd klaar bent voor gebruik, dus heb even geduld en blijf bij ons. Zodra je de wizard voltooid hebt, heb je -`,
+    description: `Als onderdeel van een nieuwe installatie, begeleiden we je in de enkele hierna volgende stappen met het configureren van je Affinity node en jouw bijbehorende accounts. Ons doel hiervan is om het je zo gemakkelijk mogelijk te maken and zodat je binnen de kortste tijd klaar bent voor gebruik, dus heb even geduld en blijf bij ons. Zodra je de wizard voltooid hebt, heb je -`,
     greeting: `Welkom bij Parity, de snelste en makkelijkste manier om je eigen node te draaien.`,
     next: `Klik volgende om door te gaan.`,
     step: {
-      account: `Je eerste Parity account aangemaakt;`,
+      account: `Je eerste Affinity account aangemaakt;`,
       privacy: `Onze privacybeleid en bedrijfsvoorwaarden begrepen;`,
       recovery: `De mogelijkheid om je account te herstellen.`
     }

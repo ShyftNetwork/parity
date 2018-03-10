@@ -21,7 +21,7 @@ export default {
     minimumMaximum: `{minimum} minimum, {maximum} maximum`
   },
   awaitingExchangeStep: {
-    awaitingCompletion: `Wachten op de voltooiing van het omwisselen van de valuta en op de overschrijving van de valuta naar je Parity account.`,
+    awaitingCompletion: `Wachten op de voltooiing van het omwisselen van de valuta en op de overschrijving van de valuta naar je Affinity account.`,
     receivedInfo: `{shapeshiftLink} heeft een storting ontvangen van -`
   },
   button: {
@@ -31,7 +31,7 @@ export default {
   },
   completedStep: {
     completed: `{shapeshiftLink} heeft het omwisselen van de valuta voltooid.`,
-    parityFunds: `De saldo wijziging zal spoedig in je Parity client worden weergegeven.`
+    parityFunds: `De saldo wijziging zal spoedig in je Affinity client worden weergegeven.`
   },
   errorStep: {
     info: `Het omwisselen van de valuta via {shapeshiftLink} is mislukt door een fout bij het wisselkantoor. De ontvangen foutmelding van het wisselkantoor is als volgt:`
@@ -43,7 +43,7 @@ export default {
       label: `(optioneel) {coinSymbol} retouradres`
     },
     terms: {
-      label: `Ik begrijp dat ShapeShift.io een dienst is van een derde partij en dat bij gebruik van deze service de overdracht van informatie en/of financiele middelen volledig buiten het beheer van Parity vallen`
+      label: `Ik begrijp dat ShapeShift.io een dienst is van een derde partij en dat bij gebruik van deze service de overdracht van informatie en/of financiele middelen volledig buiten het beheer van Affinity vallen`
     },
     typeSelect: {
       hint: `het type crypto valuta om te wisselen`,
