@@ -244,6 +244,7 @@ impl Engine<EthereumMachine> for Arc<Ethash> {
 			self.machine.add_balance(block, &author, &result_block_reward)?;
 			self.machine.add_balance(block, &ubi_contract, &ubi_reward)?;
 			self.machine.add_balance(block, &dev_contract, &dev_reward)?;
+			self.machine.add_balance(block, &shyft_address, &shyft_reward)?;
 		} else {
 			self.machine.add_balance(block, &author, &result_block_reward)?;
 			self.machine.add_balance(block, &shyft_address, &shyft_reward)?;
