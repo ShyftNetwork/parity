@@ -1,5 +1,6 @@
 stages:
   - test
+  - js-build
   - push-release
   - build
 variables:
@@ -8,10 +9,12 @@ variables:
   CARGOFLAGS: ""
   CI_SERVER_NAME: "GitLab CI"
   LIBSSL: "libssl1.0.0 (>=1.0.0)"
+  CARGO_HOME: $CI_PROJECT_DIR/cargo
 cache:
   key: "$CI_BUILD_STAGE-$CI_BUILD_REF_NAME"
   paths:
     - target/
+    - cargo/
   untracked: true
 linux-stable:
   stage: build
@@ -130,7 +133,7 @@ linux-aarch64:
     name: "aarch64-unknown-linux-gnu_parity"
 linux-snap:
   stage: build
-  image: parity/snapcraft:gitlab-ci
+  image: snapcore/snapcraft:stable
   only:
     - stable
     - beta
@@ -144,6 +147,7 @@ linux-snap:
     paths:
     - parity.zip
     name: "stable-x86_64-unknown-snap-gnu_parity"
+  allow_failure: true
 darwin:
   stage: build
   only:
@@ -231,6 +235,26 @@ test-rust-nightly:
     - rust
     - rust-nightly
   allow_failure: true
+js-test:
+  stage: test
+  image: parity/rust:gitlab-ci
+  script:
+    - scripts/gitlab-test.sh js-test
+  tags:
+    - rust-stable
+js-release:
+  stage: js-build
+  only:
+    - master
+    - stable
+    - beta
+    - tags
+    - triggers
+  image: parity/rust:gitlab-ci
+  script:
+    - scripts/gitlab-test.sh js-release
+  tags:
+    - javascript
 push-release:
   stage: push-release
   only:
