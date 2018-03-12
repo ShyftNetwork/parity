@@ -30,8 +30,7 @@ export default class MainApplication extends Component {
 
     return (
       <div style={ { background: 'red' } }>
-
-      <Router className={ styles.reset } history={ routerHistory } routes={ routes } />
+        <Router className={ styles.reset } history={ routerHistory } routes={ routes } />
       </div>
     );
   }
