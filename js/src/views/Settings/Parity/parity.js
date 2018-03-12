@@ -154,7 +154,7 @@ export default class Parity extends Component {
           this.renderItem('active', (
             <FormattedMessage
               id='settings.parity.modes.mode_active'
-              defaultMessage='Parity continuously syncs the chain'
+              defaultMessage='Affinity continuously syncs the chain'
             />
           ))
         }
