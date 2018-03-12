@@ -38,7 +38,7 @@ class Status extends Component {
     return (
       <div className={ styles.status }>
         <div className={ styles.version }>
-          { clientVersion }
+          { clientVersion.replace('Parity', 'Affinity') }
         </div>
         <div className={ styles.upgrade }>
           { this.renderConsensus() }
