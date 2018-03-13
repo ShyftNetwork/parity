@@ -19,6 +19,7 @@ import { Router } from 'react-router';
 
 import routes from './routes';
 import styles from './reset.css';
+import shyftStyles from './shyftStyles.css';
 
 export default class MainApplication extends Component {
   static propTypes = {
@@ -29,7 +30,8 @@ export default class MainApplication extends Component {
     const { routerHistory } = this.props;
 
     return (
-      <div style={ { background: 'red' } }>
+      // @note: set background frame here.
+      <div className={ shyftStyles.shyftBackground }>
         <Router className={ styles.reset } history={ routerHistory } routes={ routes } />
       </div>
     );

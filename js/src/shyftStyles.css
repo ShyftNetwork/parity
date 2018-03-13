@@ -1,0 +1,8 @@
+:root .shyftBackground {
+  background: linear-gradient(133.94deg, #321c5b 0%, #a93f58 50.14%, #f28356 100%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  width: 100%;
+}
