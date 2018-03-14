@@ -26,7 +26,7 @@ use hash::keccak;
 use bigint::prelude::U256;
 use bigint::hash::H256;
 use util::Address;
-use parity_version::{version_data, version};
+use parity_version::{version_data};
 use bytes::Bytes;
 use ansi_term::Colour;
 use ethsync::{NetworkConfiguration, is_valid_node_url};
