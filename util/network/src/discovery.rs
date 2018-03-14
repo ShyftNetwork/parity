@@ -180,7 +180,7 @@ impl Discovery {
 	}
 
 	fn clear_ping(&mut self, id: &NodeId) {
-		let mut bucket = &mut self.node_buckets[Discovery::distance(&self.id_hash, &keccak(id)) as usize];
+		let bucket = &mut self.node_buckets[Discovery::distance(&self.id_hash, &keccak(id)) as usize];
 		if let Some(node) = bucket.nodes.iter_mut().find(|n| &n.address.id == id) {
 			node.timeout = None;
 		}

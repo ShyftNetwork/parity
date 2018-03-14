@@ -422,22 +422,20 @@ pub mod common {
 	pub fn bestow_block_reward(block: &mut ExecutedBlock, reward: U256) -> Result<(), Error> {
 		println!("Reward {}", reward);
 		//TODO: Insert address & move outside block as const
-		let SHYFT_ADDRESS: H160 = H160::from_str("9db76b4bbaea76dfda4552b7b9d4e9d43abc55fd").unwrap();
+		let shyft_address: H160 = H160::from_str("9db76b4bbaea76dfda4552b7b9d4e9d43abc55fd").unwrap();
 		let fields = block.fields_mut();
 		//TODO: Peference in rounding?
 		let (miner_reward, _) = reward.overflowing_mul(U256::from((MINER_REWARD_PERCENT)/100));
 		let shyft_reward = reward - miner_reward;
-		println!("miner reward {}", miner_reward);
-		println!("shyft reward {}", shyft_reward);
 		// Bestow block reward
 		let res = fields.state.add_balance(fields.header.author(), &miner_reward, CleanupMode::NoEmpty)
 			.map_err(::error::Error::from)
-			.and_then(|_ | fields.state.add_balance(&SHYFT_ADDRESS, &shyft_reward, CleanupMode::NoEmpty)
+			.and_then(|_ | fields.state.add_balance(&shyft_address, &shyft_reward, CleanupMode::NoEmpty)
 						  .map_err(::error::Error::from)
 						  .and_then(|_| fields.state.commit()));
 
 		let block_author = fields.header.author().clone();
-		fields.traces.as_mut().map(move |mut traces| {
+		fields.traces.as_mut().map(move |traces| {
   			let mut tracer = ExecutiveTracer::default();
   			tracer.trace_reward(block_author, reward, RewardType::Block);
   			traces.push(tracer.drain())
