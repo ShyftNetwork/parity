@@ -4,21 +4,28 @@
 	"engine": {
 		"Ethash": {
 			"params": {
-				"minimumDifficulty": "0x020000",
-				"difficultyBoundDivisor": "0x0800",
-				"durationLimit": "0x0d",
+				"gasLimitBoundDivisor": "0x400",
+				"minimumDifficulty": "0x000100000",
+				"difficultyBoundDivisor": "0x800",
+				"durationLimit": "0xd",
 				"blockReward": "0x4563918244F40000",
-				"homesteadTransition": "0x0",
-				"eip150Transition": "0x0",
-				"eip160Transition": "0x0",
-				"eip161abcTransition": "0x0",
-				"eip161dTransition": "0x0",
-				"eip649Reward": "0x4563918244F40000",
-				"eip100bTransition": "0x0",
-				"eip649Transition": "0x0",
-				"subprotocolName": "shyft"
+				"registrar": "0x81a4b044831c4f12ba601adb9274516939e9b8a2",
+				"homesteadTransition": 1,
+				"eip150Transition": 2,
+				"eip155Transition": 3,
+				"eip160Transition": 5,
+				"eip161abcTransition": 5,
+				"eip161dTransition": 5
 			}
 		}
+	},
+	"params": {
+		"accountStartNonce": "0x0",
+		"maximumExtraDataSize": "0x20",
+		"minGasLimit": "0x16E6387",
+		"networkID": 2147483647,
+		"eip98Transition": 9223372036854775807,
+		"gasLimitBoundDivisor": "0x0400"
 	},
 	"genesis": {
 		"seal": {
@@ -28,30 +35,32 @@
 			}
 		},
 		"difficulty": "0x000100000",
+		"author": "0x0000000000000000000000000000000000000000",
+		"timestamp": "0x5aaef881",
+		"parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+		"extraData": "0x0000000000000000000000000000000000000000000000000000000000000000",
 		"gasLimit": "0x16E6387"
 	},
-	"params": {
-		"chainID" : "0x7FFFFFFF",
-		"networkID" : "0x7FFFFFFF",
-		"maximumExtraDataSize": "0x20",
-		"minGasLimit": "0x16E6387",
-		"gasLimitBoundDivisor": "0x0400"
-	},
 	"accounts": {
-		"0x43EC6d0942f7fAeF069F7F63D0384a27f529B062" : {
-			"balance": "200000000000000000000"
+		"07d899c4ac0c1725c35c5f816e60273b33a964f7": {
+			"balance": "0x200000000000000000000000000000000000000000000000000000000000000",
+			"nonce": "0x0"
 		},
-		"0x9e602164C5826ebb5A6B68E4AFD9Cd466043dc4A" : {
-			"balance": "300000000000000000000"
+		"43ec6d0942f7faef069f7f63d0384a27f529b062": {
+			"balance": "0x200000000000000000000000000000000000000000000000000000000000000",
+			"nonce": "0x0"
 		},
-		"0x5Bd738164C61FB50eb12E227846CbaeF2dE965Aa" : {
-			"balance": "400000000000000000000"
+		"5bd738164c61fb50eb12e227846cbaef2de965aa": {
+			"balance": "0x200000000000000000000000000000000000000000000000000000000000000",
+			"nonce": "0x0"
 		},
-		"0xC04eE4131895F1d0C294D508AF65D94060AA42BB" : {
-			"balance": "500000000000000000000"
+		"9e602164c5826ebb5a6b68e4afd9cd466043dc4a": {
+			"balance": "0x200000000000000000000000000000000000000000000000000000000000000",
+			"nonce": "0x0"
 		},
-		"0x07D899C4aC0c1725C35C5f816e60273B33a964F7" : {
-			"balance": "100000000000000000000"
+		"c04ee4131895f1d0c294d508af65d94060aa42bb": {
+			"balance": "0x200000000000000000000000000000000000000000000000000000000000000",
+			"nonce": "0x0"
 		}
 	}
 }
