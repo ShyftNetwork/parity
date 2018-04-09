@@ -48,6 +48,7 @@
 .methodTitle {
   padding-bottom: 8px !important;
   padding-top: 8px !important;
+  word-wrap: break-word;
 }
 
 .methodContent {
